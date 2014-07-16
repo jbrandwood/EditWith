@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nppshellx">
+      <UniqueIdentifier>{b17a51b9-c2bf-461b-bdcf-142e2e259db8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\nppshellx\config.cpp">
+      <Filter>nppshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\nppshellx\config.h">
+      <Filter>nppshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\nppshellx\resource.h">
+      <Filter>nppshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\nppshellx\EditWithMyApp.rc">
+      <Filter>nppshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\nppshellx\nppshellx32.def">
+      <Filter>nppshellx</Filter>
+    </None>
+    <None Include="..\source\nppshellx\nppshellx64.def">
+      <Filter>nppshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

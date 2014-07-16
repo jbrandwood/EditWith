@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vshellx">
+      <UniqueIdentifier>{3c7ef8bd-0599-4271-95e3-3f4164bee5a1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\vshellx\config.cpp">
+      <Filter>vshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\vshellx\config.h">
+      <Filter>vshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vshellx\resource.h">
+      <Filter>vshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\vshellx\EditWithMyApp.rc">
+      <Filter>vshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\vshellx\vshellx13.png">
+      <Filter>vshellx</Filter>
+    </None>
+    <None Include="..\source\vshellx\vshellx15.png">
+      <Filter>vshellx</Filter>
+    </None>
+    <None Include="..\source\vshellx\vshellx17.png">
+      <Filter>vshellx</Filter>
+    </None>
+    <None Include="..\source\vshellx\vshellx32.def">
+      <Filter>vshellx</Filter>
+    </None>
+    <None Include="..\source\vshellx\vshellx64.def">
+      <Filter>vshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

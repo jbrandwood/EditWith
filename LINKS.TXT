@@ -1,0 +1,250 @@
+*******************************************************************************
+How to Cleanly and Quickly Terminate and Restart Windows Explorer
+*******************************************************************************
+
+http://www.techsupportalert.com/content/how-cleanly-and-quickly-terminate-and-restart-windows-explorer.htm
+http://blogs.msdn.com/b/aaron_margosis/archive/2007/07/17/how-to-cleanly-stop-explorer-exe-on-windows-vista.aspx
+
+Updated 19. September 2011 - 6:34 by v.laurie
+
+(This tip is for experienced PC users.)
+
+Do you ever have a pesky application that hangs and you can’t seem to get it to
+close? Or do you sometimes edit the Registry and want to see its effect without
+having to log off first?
+
+Either task can be accomplished by terminating the Windows Explorer interface
+(that includes the desktop) and then restarting it. There are several ways to
+do this but the standard methods such as using Task Manager or Process Explorer
+may be too abrupt in some cases. This tip gives another method that appeared at
+the Microsoft MSDN blog.
+
+According to Microsoft, its purpose is to help developers and testers stop and
+restart Explorer quickly and cleanly without having to log out but the rest of
+us can use it also. Here is how it works.
+
+How to cleanly terminate Windows Explorer ...
+
+  Windows XP
+
+    Open the Start menu
+    Click “Turn Off Computer”
+    Hold down the Ctrl+Alt+Shift keys and click the "Cancel" button.
+
+  Windows Vista and Windows 7
+
+    Open the Start menu
+    Hold down the Ctrl + Shift keys and right-click in an empty spot inside the
+      Start menu. (Keep holding down the keys while you click.)
+    A hidden menu will pop up 
+    Click “Exit Explorer”
+
+    After either of these procedures you may have a very empty screen but
+    the system is still operating. If you have changed the default Explorer
+    settings to "Launch folder windows in a separate process", then some
+    folder windows may not close when you apply this trick.
+
+How to restart Windows Explorer ...
+
+  To restore Windows Explorer in all versions of Windows, do the following:
+
+    Press the keyboard combination Ctrl+Shift+Esc  to launch Task Manager
+    In Task Manager, open the "File” menu
+    Choose “New Task (Run...)"
+    Type "Explorer" and click OK
+
+    Windows Explorer will reappear.
+
+*******************************************************************************
+
+
+*******************************************************************************
+Here are a variety of useful online articles about Shell Extensions and COM.
+*******************************************************************************
+
+*******************************************************************************
+
+Working with Shell Extensions
+http://msdn.microsoft.com/en-us/library/windows/desktop/ff468984%28v=vs.85%29.aspx
+
+Initializing Shell Extension Handlers
+http://msdn.microsoft.com/en-us/library/windows/desktop/cc144105%28v=vs.85%29.aspx
+
+Shortcut (Context) Menus and Shortcut Menu Handlers
+http://msdn.microsoft.com/en-us/library/windows/desktop/cc144169%28v=vs.85%29.aspx
+
+Example Code for Implementation of the Context Menu COM Object
+http://msdn.microsoft.com/en-us/library/ms676737%28v=vs.85%29.aspx
+
+Windows 2000 UI Innovations: Enhance Your User's Experience with New Infotip and Icon Overlay Shell Extensions
+http://msdn.microsoft.com/en-us/magazine/cc748674.aspx
+
+*******************************************************************************
+
+Introduction to COM - What It Is and How to Use It. (by Michael Dunn)
+http://www.codeproject.com/com/comintro.asp
+
+Introduction to COM Part II - Behind the Scenes of a COM Server (by Michael Dunn)
+http://www.codeproject.com/com/comintro2.asp
+
+The Complete Idiot's Guide to Writing Shell Extensions (by Michael Dunn)
+http://www.codeproject.com/shell/shellextguideindex.asp
+
+How to Use Submenus in a Context Menu Shell Extension (by Michael Dunn)
+http://www.codeproject.com/shell/ctxextsubmenu.asp
+
+Context Menu Template for Visual Studio 2008 (by William E. Skeith III)
+http://www.binaryskeith.com/Projects/MenuTemplate/index.html
+
+COM in plain C (by Jeff Glatt)
+http://www.codeproject.com/Articles/13601/COM-in-plain-C
+
+*******************************************************************************
+
+COM Tutorial Step by Step (by TNV Balaji)
+http://tnvbalaji.com/articles/com/comtutorial/
+
+The Component Object Model - COM Part 1 (by Tenouk)
+http://www.tenouk.com/visualcplusmfc/visualcplusmfc23.html
+
+The Component Object Model - COM Part 2 (by Tenouk)
+http://www.tenouk.com/visualcplusmfc/visualcplusmfc23a.html
+
+*******************************************************************************
+
+Minimal COM object registration (by Larry Osterman)
+http://blogs.msdn.com/b/larryosterman/archive/2006/01/05/509731.aspx
+
+COM registration for cross process access (by Larry Osterman)
+http://blogs.msdn.com/b/larryosterman/archive/2006/01/06/510168.aspx
+
+COM registration if you need a typelib (by Larry Osterman)
+http://blogs.msdn.com/b/larryosterman/archive/2006/01/09/510856.aspx
+
+ATL Registry Component (Registrar)
+http://msdn.microsoft.com/en-us/library/49tet6k7.aspx
+
+Registry Map for RGS files (by Michael Geddes)
+http://www.codeproject.com/Articles/6319/Registry-Map-for-RGS-files
+
+*******************************************************************************
+
+How to Implement Drag and Drop Between Your Program and Explorer (by Michael Dunn)
+http://www.codeproject.com/Articles/840/How-to-Implement-Drag-and-Drop-Between-Your-Progra
+
+Reading a contract from the other side: Simulating a drop (by Raymond Chen)
+http://blogs.msdn.com/b/oldnewthing/archive/2008/07/24/8768095.aspx
+
+How do I accept files to be opened via IDropTarget instead of on the command line? (by Raymond Chen)
+http://blogs.msdn.com/b/oldnewthing/archive/2010/05/03/10006065.aspx
+
+Drag and Drop Introduction
+http://www.catch22.net/tuts/drag-and-drop-introduction
+
+ftp://ftp@ftp.microsoft.com/softlib/mslfiles/DRAGDROP.EXE (May-1996)
+ftp://ftp@ftp.microsoft.com/softlib/mslfiles/DRGDRPS.EXE  (Nov-1994)
+ftp://ftp@ftp.microsoft.com/softlib/mslfiles/DRGDRPT.EXE  (Nov-1994)
+Password is "FTP".
+
+*******************************************************************************
+
+
+*******************************************************************************
+Here is a nice post explaining why and how to build stuff with the Windows WDK
+*******************************************************************************
+
+Fighting the MSVCRT.DLL hell (by Mladen Turk)
+http://planet.jboss.org/post/fighting_the_msvcrt_dll_hell
+
+*******************************************************************************
+
+
+*******************************************************************************
+This is an old but excellent article on how to load .PNG images from a resource
+*******************************************************************************
+
+Loading JPG & PNG resources using GDI+ (by Joe Woodbury)
+http://www.codeproject.com/Articles/3537/Loading-JPG-PNG-resources-using-GDI
+
+*******************************************************************************
+
+
+*******************************************************************************
+Articles relating to waiting for a child process to be ready for input
+*******************************************************************************
+
+COM, Re-entrancy, and Message Pumping (by Timothy Ng)
+http://blogs.msdn.com/b/timng/archive/2006/09/06/743795.aspx
+
+WaitForInputIdle should really be called WaitForProcessStartupComplete (by Raymond Chen)
+http://blogs.msdn.com/b/oldnewthing/archive/2010/03/25/9984720.aspx
+
+WaitForInputIdle waits for any thread, which might not be the thread you care about (by Raymond Chen)
+http://blogs.msdn.com/b/oldnewthing/archive/2010/03/26/9985422.aspx
+
+CoWaitForMultipleHandles function (by Microsoft)
+http://msdn.microsoft.com/en-us/library/windows/desktop/ms680732%28v=vs.85%29.aspx
+
+Non pumping wait or processing a very long running operation without pumping Windows messages.
+http://social.msdn.microsoft.com/Forums/vstudio/en-US/bf71a6a8-2a6a-4c0a-ab7b-effb09451a89/non-pumping-wait-or-processing-a-very-long-running-operation-without-pumping-windows-messages?forum=vsto
+
+CoWaitForMultipleHandles API doesn't behave as documented
+http://stackoverflow.com/questions/21226600/cowaitformultiplehandles-api-doesnt-behave-as-documented
+
+Apartments and Pumping in the CLR
+http://blogs.msdn.com/b/cbrumme/archive/2004/02/02/66219.aspx
+
+Creating Threads (by Microsoft)
+http://msdn.microsoft.com/en-us/library/windows/desktop/ms682516%28v=vs.85%29.aspx
+
+Hints and Tips (by Microsoft)
+http://msdn.microsoft.com/en-us/library/windows/desktop/ms727020%28v=vs.85%29.aspx
+
+Use STA COM Objects Asynchronously (by Wong Shao Voon)
+http://www.codeproject.com/Articles/25872/Use-STA-COM-Objects-Asynchronously
+
+*******************************************************************************
+
+
+*******************************************************************************
+Articles relating to MFC's dynamic window class names
+*******************************************************************************
+
+TN070: MFC Window Class Names (by Microsoft)
+http://msdn.microsoft.com/en-us/library/btbxa0ad.aspx
+
+Provide Your Custom Class Name to your MFC Application (by Martin Richter)
+http://www.codeproject.com/Articles/196354/Provide-Your-Custom-Class-Name-to-your-MFC-Applica
+
+*******************************************************************************
+
+
+*******************************************************************************
+Articles relating to WTL's dynamic window class names
+*******************************************************************************
+
+WTL for MFC Programmers, Part I - ATL GUI Classes (by Michael Dunn)
+http://www.codeproject.com/Articles/3841/WTL-for-MFC-Programmers-Part-I-ATL-GUI-Classes
+
+WTL for MFC Programmers, Part II - WTL GUI Base Classes (by Michael Dunn)
+http://www.codeproject.com/Articles/3867/WTL-for-MFC-Programmers-Part-II-WTL-GUI-Base-Class
+
+WTL for MFC Programmers, Part III - Toolbars and Status Bars (by Michael Dunn)
+http://www.codeproject.com/Articles/3948/WTL-for-MFC-Programmers-Part-III-Toolbars-and-Stat
+
+WTL for MFC Programmers, Part IV - Dialogs and Controls (by Michael Dunn)
+http://www.codeproject.com/Articles/4028/WTL-for-MFC-Programmers-Part-IV-Dialogs-and-Contro
+
+WTL for MFC Programmers, Part V - Advanced Dialog UI Classes (by Michael Dunn)
+http://www.codeproject.com/Articles/4029/WTL-for-MFC-Programmers-Part-V-Advanced-Dialog-UI
+
+WTL for MFC Programmers, Part VI - Hosting ActiveX Controls (by Michael Dunn)
+http://www.codeproject.com/Articles/4174/WTL-for-MFC-Programmers-Part-VI-Hosting-ActiveX-Co
+
+WTL for MFC Programmers, Part VII - Splitter Windows (by Michael Dunn)
+http://www.codeproject.com/Articles/4518/WTL-for-MFC-Programmers-Part-VII-Splitter-Windows
+
+WTL for MFC Programmers, Part VIII - Property Sheets and Wizards (by Michael Dunn)
+http://www.codeproject.com/Articles/4979/WTL-for-MFC-Programmers-Part-VIII-Property-Sheets
+
+*******************************************************************************

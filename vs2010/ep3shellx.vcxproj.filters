@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ep3shellx">
+      <UniqueIdentifier>{0345edfa-06be-4ccb-8f06-30a8e829d228}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\ep3shellx\config.cpp">
+      <Filter>ep3shellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\ep3shellx\config.h">
+      <Filter>ep3shellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ep3shellx\resource.h">
+      <Filter>ep3shellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\ep3shellx\EditWithMyApp.rc">
+      <Filter>ep3shellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\ep3shellx\ep3shellx32.def">
+      <Filter>ep3shellx</Filter>
+    </None>
+    <None Include="..\source\ep3shellx\ep3shellx64.def">
+      <Filter>ep3shellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

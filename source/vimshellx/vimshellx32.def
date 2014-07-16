@@ -1,0 +1,10 @@
+; vimshellx32.def : Declares the module parameters.
+
+LIBRARY      "vimshellx32.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

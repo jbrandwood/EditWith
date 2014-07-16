@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="eppshellx">
+      <UniqueIdentifier>{8fd666c4-4385-4cdd-afe6-e44ef063fc20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\eppshellx\config.cpp">
+      <Filter>eppshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\eppshellx\config.h">
+      <Filter>eppshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\eppshellx\resource.h">
+      <Filter>eppshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\eppshellx\EditWithMyApp.rc">
+      <Filter>eppshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\eppshellx\eppshellx32.def">
+      <Filter>eppshellx</Filter>
+    </None>
+    <None Include="..\source\eppshellx\eppshellx64.def">
+      <Filter>eppshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="seshellx">
+      <UniqueIdentifier>{486b68e2-ce71-451d-9d0e-1dd541c9ef31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\seshellx\config.cpp">
+      <Filter>seshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\seshellx\config.h">
+      <Filter>seshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\seshellx\resource.h">
+      <Filter>seshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\seshellx\EditWithMyApp.rc">
+      <Filter>seshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\seshellx\seshellx32.def">
+      <Filter>seshellx</Filter>
+    </None>
+    <None Include="..\source\seshellx\seshellx64.def">
+      <Filter>seshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

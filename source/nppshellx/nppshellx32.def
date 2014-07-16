@@ -1,0 +1,10 @@
+; nppshellx32.def : Declares the module parameters.
+
+LIBRARY      "nppshellx32.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

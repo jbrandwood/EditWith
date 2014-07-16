@@ -1,0 +1,10 @@
+; tpshellx64.def : Declares the module parameters.
+
+LIBRARY      "tpshellx64.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

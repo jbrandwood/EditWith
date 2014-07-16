@@ -1,0 +1,139 @@
+*******************************************************************************
+
+EditWith
+========
+
+  **A collection of Windows Explorer shell extensions for text editors.**
+
+  Copyright John Brandwood 2014.
+
+  Distributed under the Boost Software License, Version 1.0.
+
+  (See the accompanying file LICENSE_1_0.txt or the copy at
+        http://www.boost.org/LICENSE_1_0.txt)
+
+*******************************************************************************
+
+*******************************************************************************
+QUICK INSTALL METHOD
+*******************************************************************************
+
+To install the shell extension for the current user ...
+
+  Use Windows Explorer to navigate to the appropriate "build" directory for
+  your editor, and then double-click on file
+
+    install-extension.cmd
+
+  For example, for Notepad++ this might be somewhere somewhere like ...
+  
+    C:\Downloads\EditWith\build\nppshellx\install-extension.cmd  
+
+*******************************************************************************
+
+To uninstall the shell extension for the current user ...
+
+  Use Windows Explorer to navigate to the appropriate "build" directory for
+  your editor, and then double-click on file
+
+    uninstall-extension.cmd
+
+  For example, for Notepad++ this might be somewhere somewhere like ...
+  
+    C:\Downloads\EditWith\build\nppshellx\uninstall-extension.cmd
+
+*******************************************************************************
+
+
+*******************************************************************************
+OTHER INSTALL METHODS
+*******************************************************************************
+
+There are only 2 "installable" files needed for each supported text editor.
+
+These are named <editor>shellx32.dll and <editor>shellx64.dll
+
+For example, for Notepad++, these are "nppshellx32.dll" and "nppshellx64.dll".
+
+You only actually need the appropriate one for the version of Windows that you
+are running (32-bit or 64-bit).
+
+You can install the shell extension either for the current user only, or for
+everyone on the local computer.
+
+You can also optionally change the command line options that the shell
+extension uses to launch a new instance of the editor.
+
+*******************************************************************************
+
+To install the shell extension manually ...
+
+1)  Copy the appropriate DLL file to any directory.
+
+    This can be where the editor is installed, or almost anywhere else. There
+    is a 256 character limit for the complete path to the DLL.
+
+2)  Open a command prompt and register the DLL by running either
+
+     (For the current user only)
+
+       "regsvr32 full\path\to\nppshellx32.dll"
+     or
+       "regsvr32 full\path\to\nppshellx64.dll"
+
+     (For all users - you must be running as an ADMINISTRATOR)
+
+       "regsvr32 /n /i:"everyone" full\path\to\nppshellx32.dll"
+     or
+       "regsvr32 /n /i:"everyone" full\path\to\nppshellx64.dll"
+
+3)  That's all.
+
+    You will probably need to close all Explorer windows before the context
+    menu will appear.
+
+*******************************************************************************
+
+To uninstall the shell extension manually ...
+
+1)  Open a command prompt and unregister the DLL by running either
+
+     (For the current user only)
+
+       "regsvr32 /u full\path\to\nppshellx32.dll"
+     or
+       "regsvr32 /u full\path\to\nppshellx64.dll"
+
+     (For all users - you must be running as an ADMINISTRATOR)
+
+       "regsvr32 /u /n /i:"everyone" full\path\to\nppshellx32.dll"
+     or
+       "regsvr32 /u /n /i:"everyone" full\path\to\nppshellx64.dll"
+
+2)  Delete it, or leave it ... it's your choice. But definitely don't delete
+    it if another user has registered it.
+
+*******************************************************************************
+
+ADVANCED: To install the shell extension manually with customized options, i.e.
+          to run "mymacro.lua" on startup with the Zeus IDE (zshellx) ...
+
+1)  Copy the appropriate DLL file to any directory.
+
+    This can be where the editor is installed, or almost anywhere else. There
+    is a 256 character limit for the complete path to the DLL.
+
+2)  Open a command prompt and register the DLL by running either
+
+     (For the current user only)
+
+       "regsvr32 /n /i:"-s -n -vn- -m mymacro.lua" full\path\to\zshellx32.dll"
+     or
+       "regsvr32 /n /i:"-s -n -vn- -m mymacro.lua" full\path\to\zshellx64.dll"
+
+3)  That's all.
+
+    You will probably need to close all Explorer windows before the context
+    menu will appear.
+
+*******************************************************************************

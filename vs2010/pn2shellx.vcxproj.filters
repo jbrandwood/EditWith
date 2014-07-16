@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pn2shellx">
+      <UniqueIdentifier>{e231dddc-9af9-4cc9-8c9e-1376b5e6eec1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\pn2shellx\config.cpp">
+      <Filter>pn2shellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\pn2shellx\config.h">
+      <Filter>pn2shellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\pn2shellx\resource.h">
+      <Filter>pn2shellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\pn2shellx\EditWithMyApp.rc">
+      <Filter>pn2shellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\pn2shellx\pn2shellx32.def">
+      <Filter>pn2shellx</Filter>
+    </None>
+    <None Include="..\source\pn2shellx\pn2shellx64.def">
+      <Filter>pn2shellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

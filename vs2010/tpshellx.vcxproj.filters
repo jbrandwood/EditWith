@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tpshellx">
+      <UniqueIdentifier>{41803743-613b-4334-b9cd-503b3fcfc4a1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\tpshellx\config.cpp">
+      <Filter>tpshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\tpshellx\config.h">
+      <Filter>tpshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tpshellx\resource.h">
+      <Filter>tpshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\tpshellx\EditWithMyApp.rc">
+      <Filter>tpshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\tpshellx\tpshellx32.def">
+      <Filter>tpshellx</Filter>
+    </None>
+    <None Include="..\source\tpshellx\tpshellx64.def">
+      <Filter>tpshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

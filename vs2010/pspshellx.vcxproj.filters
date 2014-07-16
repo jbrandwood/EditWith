@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pspshellx">
+      <UniqueIdentifier>{6c1a7d0e-d081-4285-8ef3-3acf086fe36f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\pspshellx\config.cpp">
+      <Filter>pspshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\pspshellx\config.h">
+      <Filter>pspshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\pspshellx\resource.h">
+      <Filter>pspshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\pspshellx\EditWithMyApp.rc">
+      <Filter>pspshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\pspshellx\pspshellx32.def">
+      <Filter>pspshellx</Filter>
+    </None>
+    <None Include="..\source\pspshellx\pspshellx64.def">
+      <Filter>pspshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

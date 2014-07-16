@@ -1,0 +1,33 @@
+This project's source code, scripts, documentation and compiled shell extension
+DLL files are distributed under the Boost Software License, Version 1.0.
+
+(See the accompanying file LICENSE_1_0.txt or the copy at
+      http://www.boost.org/LICENSE_1_0.txt)
+
+The logo images and icons for the text editors that are included here in some
+the shell extensions are the copyrighted property of their individual owners,
+and are used here with their specific permission.
+
+That permission only applies to this project's use of those logo images and
+icons within the shell extension that supports each individual text editor.
+
+Under no circumstances should the logos/icons be used in any derivative or
+other works without the explicit permission of their owners.
+
+Thanks is given to the following companies/individuals that have kindly allowed
+their logos/icons to be used here ...
+
+  Text Editor                 |  Developer
+  ----------------------------|-----------------------------
+  EditPad Pro                 |  Jan Goyvaerts
+  Komodo Edit and Komodo IDE  |  ActiveState Software, Inc
+  Multi-Edit                  |  Multi Edit Software, Inc
+  Programmer's Notepad 2      |  Simon Steele
+  PSPad                       |  Jan Fiala
+  SlickEdit                   |  SlickEdit, Inc
+  Sublime Text                |  Sublime HQ Pty, Ltd
+  TextPad                     |  Helios Software Solutions
+  UltraEdit and UEStudio      |  IDM Computer Solutions, Inc
+  VEDIT                       |  Greenview Data, Inc
+  Vim                         |  Bram Moolenaar
+  Zeus IDE                    |  Xidicone Pty, Ltd

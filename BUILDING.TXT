@@ -1,0 +1,61 @@
+*******************************************************************************
+
+EditWith
+========
+
+  **A collection of Windows Explorer shell extensions for text editors.**
+
+  Copyright John Brandwood 2014.
+
+  Distributed under the Boost Software License, Version 1.0.
+
+  (See the accompanying file LICENSE_1_0.txt or the copy at
+        http://www.boost.org/LICENSE_1_0.txt)
+
+*******************************************************************************
+
+Building the shell extensions
+-----------------------------
+
+If you want to build the source ... then you can do so with Visual Studio 2008
+(and hopefully anything newer), with the included project files.
+
+The resulting shell extension will statically include that compiler's runtime
+library and will be approximately 40KB larger than if built with the Windows
+Driver Kit.
+
+To compile it to use the operating system's inbuilt MSVCRT.DLL, you'll have
+to build it with the Microsoft's free Windows Driver Kit 7.1.0 that you can
+find at ...
+
+  http://www.microsoft.com/en-us/download/details.aspx?id=11800
+
+Once you've installed the Windows Driver Kit (aka WDK), you can run the batch
+file "build-with-wdk.cmd" that is in each supported text editor's "build"
+directory.
+
+This will both build and register the shell extension for the current user.
+
+It is not necessary to compile/link the shell extension with the Windows WDK,
+but it does offer one specific advantage, and one corresponding disadvantage.
+
+The disadvantage is that the WDK builds are release-only, and can't be easily
+debugged (back to printfs!), which is a good reason to use Visual Studio
+while developing/modifying the extension.
+
+The advantage is that the resulting DLL is dependent upon the operating
+system's MSVCRT.DLL (just like Windows Explorer itself), and does not need to
+include Visual Studio's runtime, and so it is approximately 40KB smaller.
+
+It's explained at ...
+
+  http://planet.jboss.org/post/fighting_the_msvcrt_dll_hell
+
+So in practice, I personally develop/debug this with the Visual Studio 2008
+solution, and then recompiled with the WDK for final testing.
+
+As both Visual Studio 2008 and the Windows Driver Kit 7.1.0 are based on
+the same generation of compilers, I didn't have to worry about any strange
+version-specific compiler errors creeping in.
+
+*******************************************************************************

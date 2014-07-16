@@ -1,0 +1,10 @@
+; pn2shellx32.def : Declares the module parameters.
+
+LIBRARY      "pn2shellx32.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

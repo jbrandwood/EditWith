@@ -1,0 +1,10 @@
+; uesshellx64.def : Declares the module parameters.
+
+LIBRARY      "uesshellx64.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

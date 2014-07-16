@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="su2shellx">
+      <UniqueIdentifier>{b6bfbe88-bde0-4423-ba45-bd1432dda3a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\su2shellx\config.cpp">
+      <Filter>su2shellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\su2shellx\config.h">
+      <Filter>su2shellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\su2shellx\resource.h">
+      <Filter>su2shellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\su2shellx\EditWithMyApp.rc">
+      <Filter>su2shellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\su2shellx\su2shellx32.def">
+      <Filter>su2shellx</Filter>
+    </None>
+    <None Include="..\source\su2shellx\su2shellx64.def">
+      <Filter>su2shellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

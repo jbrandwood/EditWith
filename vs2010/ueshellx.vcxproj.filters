@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ueshellx">
+      <UniqueIdentifier>{e30d33ed-93b7-47fd-92c8-6e1bb0d6d122}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\ueshellx\config.cpp">
+      <Filter>ueshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\ueshellx\config.h">
+      <Filter>ueshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ueshellx\resource.h">
+      <Filter>ueshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\ueshellx\EditWithMyApp.rc">
+      <Filter>ueshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\ueshellx\ueshellx32.def">
+      <Filter>ueshellx</Filter>
+    </None>
+    <None Include="..\source\ueshellx\ueshellx64.def">
+      <Filter>ueshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>
