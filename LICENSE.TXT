@@ -20,8 +20,10 @@ their logos/icons to be used here ...
   Text Editor                 |  Developer
   ----------------------------|-----------------------------
   EditPad Pro                 |  Jan Goyvaerts
+  EditPlus                    |  ES-Computing
   Komodo Edit and Komodo IDE  |  ActiveState Software, Inc
   Multi-Edit                  |  Multi Edit Software, Inc
+  Notepad++                   |  Don Ho
   Programmer's Notepad 2      |  Simon Steele
   PSPad                       |  Jan Fiala
   SlickEdit                   |  SlickEdit, Inc

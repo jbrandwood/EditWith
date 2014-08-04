@@ -37,8 +37,6 @@
 #define MY_EXE_NAME L"editplus.exe"
 #define MY_EXE_OPTS L""
 
-#define GET_ICON_FROM_MY_EXE
-
 //
 // ****************************************************************************
 //

@@ -45,8 +45,6 @@
 // Notepad++ only accepts drag-n-drop within an actual edit window.
 #define DROP_ON_CHILD_WINDOW L"Scintilla"
 
-#define GET_ICON_FROM_MY_EXE
-
 //
 // ****************************************************************************
 //

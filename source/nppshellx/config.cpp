@@ -30,22 +30,18 @@
 //   Windows Larger  Text 150% (144dpi) -> check mark icon is 25x25 pixels.
 //   Windows Largest Text 200% (192dpi) -> check mark icon is 31x31 pixels.
 
-#include "config.h"
+#include "resource.h"
 
 int SelectMyIcon ( int iWantSz, bool &fCenterIcon, bool &fHQBScaling )
 {
   fCenterIcon = false;
+  fHQBScaling = false;
 
-  if ( iWantSz < 20 )
-  {
-    fHQBScaling = false;
-    return 16;
-  }
-  else
-  {
-    fHQBScaling = true;
-    return 32;
-  }
+  if ( iWantSz < 20 ) { return IDB_MENU_BITMAP_16; }
+
+  fHQBScaling = true;
+
+  return IDB_MENU_BITMAP_32;
 }
 
 //

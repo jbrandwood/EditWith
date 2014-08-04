@@ -3,19 +3,19 @@
 EditWith
 ========
 
-** A collection of Windows Explorer shell extensions for text editors. **
+**A collection of Windows Explorer shell extensions for text editors.**
 
-   Copyright John Brandwood 2014.
+  Copyright John Brandwood 2014.
 
-   Distributed under the Boost Software License, Version 1.0.
+  Distributed under the Boost Software License, Version 1.0.
 
-   (See the accompanying file LICENSE_1_0.txt or the copy at
-         http://www.boost.org/LICENSE_1_0.txt)
+  (See the accompanying file LICENSE_1_0.txt or the copy at
+        http://www.boost.org/LICENSE_1_0.txt)
 
-   Home                  |  URL
-   ----------------------|-------------------------------------------
-   Files / Forum / Wiki  |  https://sourceforge.net/projects/editwith
-   Source                |  https://gitub.com/jbrandwood/editwith
+  Home                  |  URL
+  ----------------------|-------------------------------------------
+  Files / Forum / Wiki  |  https://sourceforge.net/projects/editwith
+  Source                |  https://gitub.com/jbrandwood/editwith
 
 *******************************************************************************
 
