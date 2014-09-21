@@ -15,7 +15,7 @@ EditWith
   Home                  |  URL
   ----------------------|-------------------------------------------
   Files / Forum / Wiki  |  https://sourceforge.net/projects/editwith
-  Source                |  https://gitub.com/jbrandwood/editwith
+  Source                |  https://github.com/jbrandwood/editwith
 
 *******************************************************************************
 
