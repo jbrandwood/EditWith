@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bshellx", "bshellx.vcxproj", "{61572D51-EE8A-4380-B4D0-9D204D7F48D5}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emeshellx", "emeshellx.vcxproj", "{F6290F34-F880-4634-99FF-67B4D9108B81}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ep3shellx", "ep3shellx.vcxproj", "{BA8923C0-E549-4FD2-9A0F-A57D81782553}"
@@ -45,6 +47,14 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Debug|Win32.Build.0 = Debug|Win32
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Debug|x64.ActiveCfg = Debug|x64
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Debug|x64.Build.0 = Debug|x64
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Release|Win32.ActiveCfg = Release|Win32
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Release|Win32.Build.0 = Release|Win32
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Release|x64.ActiveCfg = Release|x64
+		{61572D51-EE8A-4380-B4D0-9D204D7F48D5}.Release|x64.Build.0 = Release|x64
 		{F6290F34-F880-4634-99FF-67B4D9108B81}.Debug|Win32.ActiveCfg = Debug|Win32
 		{F6290F34-F880-4634-99FF-67B4D9108B81}.Debug|Win32.Build.0 = Debug|Win32
 		{F6290F34-F880-4634-99FF-67B4D9108B81}.Debug|x64.ActiveCfg = Debug|x64

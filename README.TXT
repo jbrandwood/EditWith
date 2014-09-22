@@ -15,7 +15,7 @@ EditWith
   Home                  |  URL
   ----------------------|-------------------------------------------
   Files / Forum / Wiki  |  https://sourceforge.net/projects/editwith
-  Source                |  https://gitub.com/jbrandwood/editwith
+  Source                |  https://github.com/jbrandwood/editwith
 
 *******************************************************************************
 
@@ -46,6 +46,7 @@ Shell extension DLLs are supplied for the following text editors ...
 
   Text Editor               |  Extension
   :-------------------------|----------:
+  Brackets                  |    bshellx
   EditPad Pro               |  eppshellx
   EditPlus 3                |  ep3shellx
   EmEditor                  |  emeshellx

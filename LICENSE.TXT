@@ -19,6 +19,7 @@ their logos/icons to be used here ...
 
   Text Editor                 |  Developer
   ----------------------------|-----------------------------
+  Brackets                    |  Adobe Systems Incorporated
   EditPad Pro                 |  Jan Goyvaerts
   EditPlus                    |  ES-Computing
   Komodo Edit and Komodo IDE  |  ActiveState Software, Inc

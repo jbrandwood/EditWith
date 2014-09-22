@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bshellx">
+      <UniqueIdentifier>{9f048bd0-7e1d-41dc-8126-3ba5ca85e7a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\bshellx\config.cpp">
+      <Filter>bshellx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\EditWithMyApp.cpp" />
+    <ClCompile Include="..\source\MyShellExt.cpp" />
+    <ClCompile Include="..\source\ResourceFuncs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\bshellx\config.h">
+      <Filter>bshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bshellx\resource.h">
+      <Filter>bshellx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\EditWithMyApp.h" />
+    <ClInclude Include="..\source\ResourceFuncs.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\bshellx\EditWithMyApp.rc">
+      <Filter>bshellx</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\bshellx\bshellx32.def">
+      <Filter>bshellx</Filter>
+    </None>
+    <None Include="..\source\bshellx\bshellx64.def">
+      <Filter>bshellx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

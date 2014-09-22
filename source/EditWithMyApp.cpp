@@ -691,7 +691,12 @@ BOOL CALLBACK CEditWithMyApp::EnumWindowCallback (
   if ( wcsncmp( aTempString, MY_WIN_CLASS_STR, MY_WIN_CLASS_LEN ) != 0 )
     return TRUE;
 #else
-  if (  wcscmp( aTempString, MY_WIN_CLASS_STR ) != 0 )
+	#ifdef MY_WIN_CLASS_STR_2ND
+	  if ( wcscmp( aTempString, MY_WIN_CLASS_STR ) != 0
+		  && wcscmp( aTempString, MY_WIN_CLASS_STR_2ND ) != 0 )
+	#else
+	  if ( wcscmp( aTempString, MY_WIN_CLASS_STR ) != 0 )
+	#endif
     return TRUE;
 #endif
 

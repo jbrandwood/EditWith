@@ -1,0 +1,10 @@
+; bshellx32.def : Declares the module parameters.
+
+LIBRARY      "bshellx32.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE
