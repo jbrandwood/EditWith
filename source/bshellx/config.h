@@ -24,6 +24,13 @@
 // Brackets requires OLE instead of WM_DROPFILES.
 #define USE_OLE_DODRAGDROP
 
+// Brackets will only open a new session if there are no files on the command line.
+#define ALWAYS_DROP_ON_2ND
+
+// Brackets doesn't like a drag-and-drop too quickly after a new session starts.
+// Give it 4000ms to get it's act together.
+#define INITIAL_DROP_DELAY 4000
+
 // N.B. Brackets uses the same window class name as other ChromiumEmbedded applications.
 #define MY_WIN_CLASS_STR L"CEFCLIENT"
 
@@ -53,10 +60,6 @@
 // "edit-multi-sessions.js" files in this extensions's "build" directory.
 //
 // #define SINGLE_MY_APP_INSTANCE
-
-// Brackets does seem to support multiple instances from the debug menu, but
-// not from the command line AFAIK ... so disable multi-session support.
-//#define SINGLE_MY_APP_INSTANCE
 
 #ifdef SINGLE_MY_APP_INSTANCE
  #define MY_EXE_OPTS L""

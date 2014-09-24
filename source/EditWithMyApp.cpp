@@ -978,7 +978,12 @@ HRESULT CEditWithMyApp::SendFilesToNewAppInstance(
   // If there are too many files for the command line, then we'll just open up
   // a new instance and then drag-n-drop the files on it once it's running.
   bool fFilesOnCLI = true;
+
+#ifdef ALWAYS_DROP_ON_2ND
+  if ( uBufNeed > 32760 || this->m_uNumExistingWindows != 0 )
+#else
   if ( uBufNeed > 32760 )
+#endif
   {
 #ifdef NO_INITIAL_DROP_ON_2ND
     // SlickEdit and PSPad will only open their 1st session without a file
@@ -1121,6 +1126,7 @@ HRESULT CEditWithMyApp::SendFilesToNewAppInstance(
 // ****************************************************************************
 //
 
+// Some editors define a longer delay in their config.h
 #ifndef INITIAL_DROP_DELAY
 #define INITIAL_DROP_DELAY 300
 #endif
@@ -1182,8 +1188,8 @@ HRESULT CEditWithMyApp::SendFilesToNewProcessWindow(
     if ( this->m_hFoundWindow )
     {
 #ifdef USE_OLE_DODRAGDROP
-      // Wait for the editor to register it's IDropTarget.
-      if ( GetPropW( this->m_hFoundWindow, L"OleDropTargetInterface" ) )
+//      // Wait for the editor to register it's IDropTarget.
+//      if ( GetPropW( this->m_hFoundWindow, L"OleDropTargetInterface" ) )
 #else
       // Wait for the editor's message queue to be ready.
       if ( WaitForInputIdle( cPI.hProcess, 0 ) != WAIT_TIMEOUT )
